@@ -1,0 +1,59 @@
+.box1 {
+    width: 50%; /* Adjust the width as needed */
+    height: 700px; /* Adjust the height as needed */
+    background-color:  #a2d7f0; /* Set the background color */
+    float: left; /* Float the box to the left */
+    padding: 40px; /* Add padding to the box */
+    box-sizing: border-box; /* Include padding and border in the box's total width and height */
+    border: 20px solid rgb(52, 115, 117);
+    margin: 40px;
+}
+
+.box1 p {
+    font-size: 70px;
+    text-align: center;
+    font-family: Comic sans-serif;
+}
+
+
+button {
+    display: block; /* Display the button as a block element */
+    width: 130px; /* Set the width of the button */
+    height: 70px; /* Set the height of the button */
+    background-color: rgb(52, 115, 117); /* Set the background color of the button */
+    color: #fff; /* Set the text color of the button */
+    text-align: center; /* Center the text of the button */
+    line-height: 50px; /* Set the line height of the button */
+    margin: 20px auto 0; /* Add margin to the button to center it horizontally and push it to the top */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box2 {
+    width: 40%; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    background-color: #a2d7f0; /* Set the background color */
+    float: right; /* Float the box to the left */
+    padding: 40px; /* Add padding to the box */
+    box-sizing: border-box; /* Include padding and border in the box's total width and height */
+    border: 20px solid rgb(52, 115, 117);
+    margin: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.box3 {
+    width: 40%; /* Adjust the width as needed */
+    height: 320px; /* Adjust the height as needed */
+    background-color:  #a2d7f0; /* Set the background color */
+    float: right; /* Float the box to the left */
+    padding: 40px; /* Add padding to the box */
+    box-sizing: border-box; /* Include padding and border in the box's total width and height */
+    border: 20px solid rgb(52, 115, 117);
+    margin: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#time-left {
+    font-size: 50px;
+}
