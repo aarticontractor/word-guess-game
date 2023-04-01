@@ -1,3 +1,23 @@
+body {
+    background-color: rgb(23, 23, 27);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #a2d7f0;
+    border-block: 5px solid rgb(52, 115, 117);
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif
+  }
+
+
 .box1 {
     width: 50%; /* Adjust the width as needed */
     height: 700px; /* Adjust the height as needed */
@@ -17,15 +37,19 @@
 
 
 button {
-    display: block; /* Display the button as a block element */
-    width: 130px; /* Set the width of the button */
-    height: 70px; /* Set the height of the button */
-    background-color: rgb(52, 115, 117); /* Set the background color of the button */
-    color: #fff; /* Set the text color of the button */
-    text-align: center; /* Center the text of the button */
-    line-height: 50px; /* Set the line height of the button */
-    margin: 20px auto 0; /* Add margin to the button to center it horizontally and push it to the top */
+    display: inline-block; 
+    width: 130px; 
+    height: 70px; 
+    background-color: rgb(52, 115, 117); 
+    color: #fff; 
+    text-align: center; 
+    line-height: 20px; 
+    margin: 30px auto 0; /* Add margin to the button to center it horizontally and push it to the top */
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 .box2 {
