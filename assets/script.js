@@ -12,24 +12,26 @@ function generateWord(){
     var wordArr = ["California", "Dragon", "Android"];
     randomWord = wordArr[Math.floor(Math.random() * wordArr.length)];
     console.log(randomWord);
-    return randomWord;
+    hideWord();
 }
 
 var underscoredWord = "";
 function hideWord(){
     for(var i = 0; i < randomWord.length; i++){
-        randomWord.charAt(i) = "_ ";
-        console.log(randomWord.charAt(i));
-        underscoredWord = underscoredWord + randomWord.charAt(i);
+        var randomLetter = randomWord.charAt(i)
+        randomLetter = "_ ";
+        console.log(randomLetter);
+        underscoredWord = underscoredWord + randomLetter;
         console.log(underscoredWord);
     }
     wordDisplay.textContent = underscoredWord;
 }
 
+/*
 //Will reveal letter if user inputs a letter matching the letters within the word
 var word = "";
 function userGuess(){
-    var userInput = ""
+    var userInput = "";
     userInput = prompt("Input a letter");
         for (var i = 0; i < randomWord.length; i++){
             if (userInput == randomWord.charAt(i)){
@@ -46,50 +48,51 @@ function userGuess(){
             }
         }
         console.log(word);
-    wordDisplay.textContent = word;
-}
+}*/
 
 // Will start a countdown
-//Starts countdown from 10 seconds
-var timeLeft = 10;
+//Starts countdown from 5 seconds
 function countdown() {
+    var timeLeft = 5;
     //Will decrement by one second until it reaches 0
     var timeInterval = setInterval(function () {
-        if (timeLeft > 1 && word != randomWord) {
+        if (timeLeft > 0) {
             timer.textContent = timeLeft;
             timeLeft--;
         }
-        if (timeLeft != 0 && word == randomWord){
-            var won = won + 1;
-            alert("You Won!!");
-        }
-        if (timeLeft == 0 && word != randomWord){
-            timer.textContent = '0';
-            var lost = lost + 1;
-            alert("You Lost!!");
+        /*else if (timeLeft != 0){
+            timer.textContent = timeLeft;
             clearInterval(timeInterval);
+            totalWins();
+        }*/
+        else{
+            timer.textContent = '0';
+            console.log(lost);
+            clearInterval(timeInterval);
+            totalLosses();
         }
     }, 1000);
-  }
-
-//Will keep track of the users letter selections
+}
 
 //Will initiate the game
 function startGame(){
-    countdown();
     generateWord();
-    hideWord();
+    countdown();
 }
 
 //Will keep count of total wins
 var won = 0;
 function totalWins(){
+    won = won + 1;
+    console.log(won);
     wins.textContent = won;
 }
 
 //Will keep count of total losses
 var lost = 0;
 function totalLosses(){
+    lost = lost + 1;
+    console.log(lost);
     losses.textContent = lost;
 }
 
